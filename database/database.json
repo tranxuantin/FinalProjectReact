@@ -8,6 +8,15 @@
       "email": "balevu123321@gmail.com",
       "password": "13102004Try@",
       "cart": []
+    },
+    {
+      "id": 2,
+      "firstname": "Xuân Tín",
+      "lastname": "Trần",
+      "phone": 283752918,
+      "email": "balevu321@gmail.com",
+      "password": "13102004Try@",
+      "cart": []
     }
   ],
   "product": [
@@ -70,7 +79,7 @@
   ],
   "PreviousPage": [
     {
-      "page": "/",
+      "page": "/DetailProduct/3",
       "id": 1
     }
   ]

@@ -19,6 +19,7 @@ const RegisterForm = () => {
         phone: values.phone,
         email: values.email,
         password: values.password,
+        cart: [],
       });
     };
 
