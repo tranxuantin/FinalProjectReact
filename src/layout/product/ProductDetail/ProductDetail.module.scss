@@ -1,0 +1,113 @@
+@import "normalize.css";
+
+#main {
+  width: 90%;
+  height: 550px;
+  background-color: white;
+  margin: auto;
+  border-radius: 3rem;
+  margin-top: 140px;
+}
+
+.Product-Detail {
+  display: grid;
+  grid-template-columns: 45% 50%;
+  grid-column-gap: 5rem;
+  grid-template-rows: repeat(1, auto);
+  height: 100%;
+
+  &-Image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 80%;
+      height: 70%;
+      margin-top: 3.2rem;
+      margin-left: 5rem;
+    }
+  }
+
+  &-Introduce {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 1.8rem;
+    width: 100%;
+    height: 100%;
+
+    &-Information {
+      width: 95%;
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-row-gap: 0.5rem;
+      margin-top: 5rem;
+
+      h1 {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      .Product-Detail-Introduce-Information-Price {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+
+        &-Money {
+          color: red;
+          text-transform: capitalize;
+          font-size: 2.9rem;
+          font-weight: bold;
+        }
+
+        &-Amount {
+          input {
+            width: 17rem;
+            height: 3.6rem;
+            border-color: #fde0d9;
+            border-radius: 0.6rem;
+          }
+        }
+      }
+    }
+
+    &-Button {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+
+      &-Left {
+        padding: 15px 40px;
+        background-color: #fde0d9;
+        border-color: #f7442e;
+        font-size: 2rem;
+        color: #f7442e;
+        cursor: pointer;
+        transition: none;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      &-Right {
+        padding: 16.5px 40px;
+        background-color: #f7442e;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        margin-right: 14rem;
+      }
+    }
+  }
+}

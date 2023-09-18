@@ -1,0 +1,25 @@
+@import "normalize.css";
+
+.Product-Table {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  max-width: 96.5%;
+  border-radius: 3rem;
+  background-color: #f3f2f2f8;
+
+  &-Text {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f7442e;
+    text-transform: uppercase;
+    margin: -0.4rem 0px;
+    padding-top: 3rem;
+    padding-left: 7.2rem;
+  }
+}

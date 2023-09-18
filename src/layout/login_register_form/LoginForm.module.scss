@@ -1,0 +1,140 @@
+@import "normalize.css";
+
+#header {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(2, auto);
+  padding: 30px 0px;
+
+  .header-login {
+    text-align: center;
+
+    &-welcome {
+      margin-right: 10px;
+      font-size: 3.3rem;
+      font-weight: bold;
+      color: #f7442e;
+      cursor: pointer;
+    }
+
+    &-login {
+      margin-left: 10px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  .header-help {
+    text-align: end;
+    padding-top: 10px;
+    font-size: 1.6rem;
+    color: #f7442e;
+    cursor: pointer;
+  }
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: #f4f6f9;
+  height: 530px;
+  justify-items: center;
+  align-items: center;
+
+  .main-background {
+    width: 200%;
+    height: 100%;
+
+    &-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .main-formik {
+    background-color: white;
+    height: 80%;
+    width: 50%;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: end;
+    padding-top: 50px;
+
+    &-form {
+      margin-bottom: 10px;
+      font-size: 1.9rem;
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-row-gap: 25px;
+
+      .submit-text {
+        text-align: center;
+        font-size: 5rem;
+        color: #f7442e;
+        font-weight: 500;
+      }
+
+      .submit-button {
+        padding: 13px 0px;
+        background-color: #f7442e;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-size: 1.6rem;
+        cursor: pointer;
+      }
+
+      #Email {
+        width: 32rem;
+        height: 3.79rem;
+        border-radius: 2px;
+        border-color: rgba(209, 206, 206, 0.925);
+        margin-bottom: 10px;
+      }
+
+      #Password {
+        width: 32rem;
+        height: 3.5rem;
+        border-radius: 2px;
+        border-color: rgba(209, 206, 206, 0.925);
+        margin-top: 10px;
+      }
+
+      #login-email {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+
+        small {
+          font-size: 1.2rem;
+        }
+      }
+
+      #login-password {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 1rem;
+
+        small {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &-register {
+      margin-bottom: 80px;
+      margin-left: 2px;
+      font-size: 1.5rem;
+
+      .Register{
+        cursor: pointer;
+
+        &:hover{
+          color: blue;
+        }
+      }
+    }
+  }
+}

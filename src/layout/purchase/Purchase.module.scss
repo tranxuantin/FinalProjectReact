@@ -1,0 +1,46 @@
+@import "normalize.css";
+
+#Purchase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  height: auto;
+  background-color: white;
+  margin: auto;
+  border-radius: 2rem;
+
+  .Purchase-Total {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 15%;
+    grid-column-gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    &-Price {
+      text-align: end;
+      padding-top: 0.5rem;
+      padding-right: 7rem;
+      font-size: 2.3rem;
+      font-weight: bold;
+      color: red;
+    }
+
+    &-Buy {
+      width: 16rem;
+      height: 3.5rem;
+      border: none;
+      background-color: pink;
+      color: white;
+      border-radius: 8px;
+      opacity: 0.8;
+      cursor: pointer;
+
+      &:hover {
+        background-color: red;
+        opacity: 1;
+      }
+    }
+  }
+}

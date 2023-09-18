@@ -1,0 +1,88 @@
+@import "normalize.css";
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3, auto);
+  margin-top: 5rem;
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    justify-items: center;
+    background-color: #f7442e;
+    padding: 20px 0px;
+
+    &-phone {
+      font-size: 2.2rem;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    &-email {
+      font-size: 2.2rem;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    &-facebook {
+      font-size: 2.2rem;
+      font-weight: bold;
+      cursor: pointer;
+
+      &-link {
+        color: white;
+      }
+    }
+  }
+
+  .information {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 20px;
+    background-color: white;
+
+    &-menu {
+      margin-left: 100px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-rows: auto;
+
+      &-list {
+        color: #f7442e;
+        font-size: 2.3rem;
+        font-weight: bold;
+      }
+    }
+
+    &-image {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .copyright {
+    padding: 30px 30px;
+    padding-left: 100px;
+    background-color: #c2c2c2;
+
+    &-detail {
+      font-size: 1.5rem;
+    }
+
+    &-information {
+      font-size: 1.3rem;
+    }
+  }
+}
